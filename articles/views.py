@@ -3,7 +3,6 @@ from .models import Article
 from .forms import ArticleForm
 from django.contrib.auth.decorators import login_required
 
-
 def article_search_view(request):
     query_dict = request.GET
     # query = query_dict.get("q")
