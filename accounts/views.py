@@ -7,7 +7,6 @@ def login_view(request):
     if request.method == 'POST':
         username = request.POST.get("username")
         password = request.POST.get("password")
-        #remove this!
         print(username, password)
         user = authenticate(request, username=username, password=password)
         if user is None:

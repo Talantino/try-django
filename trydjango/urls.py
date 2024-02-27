@@ -26,15 +26,13 @@ from accounts.views import (
     logout_view,
 )
 
-
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", home_view),
     path('articles/', article_search_view),
     path('articles/create/', article_create_view),
     path('articles/<int:id>/', article_detail_view),
-    #re_path(r'articles/(?P<id>\d+)/$', home_view),
+#   re_path(r'articles/(?P<id>\d+)/$', home_view),
     path('login/', login_view),
     path('logout/', logout_view),
 
